@@ -19,11 +19,11 @@ card structure
 ```
 
 In each card (which className is frame) may has some animate elements (which className is step).
-- In each step has 4 attributes as lifecycle hooks:
+In each step has 4 attributes as lifecycle hooks:
 - **data-init**
 - **data-in**
 - **data-stay**
 - **data-out**
 
-write those attrbutes, you can css (for now, only support `opacity`, `scale`, `duration`)
-- You can also set `data-video` or `data-audio` in each frame for video play or audio background play.
+Write those attrbutes, you can css (for now, only support `opacity`, `scale`, `duration`).
+You can also set `data-video` or `data-audio` in each frame for video play or audio background play.
