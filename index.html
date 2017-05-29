@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .frame{
+            display: none;
+        }
+
+        .frame-active{
+            display: block;
+        }
+
+        .frame{
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .center{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div class="frame frame-active">
+        <div class="center">
+            <div class="step"
+                 data-init="opacity:0; scale: .4"
+                 data-in="opacity: 1; scale: 1; duration: 1000"
+                 data-stay="duration: 1000"
+                 data-out="opacity: 0; duration: 500">
+                This Summer
+            </div>
+        </div>
+    </div>
+    <div class="frame">
+        <div class="center">
+            <div class="step"
+                 data-init="opacity:0; scale: .4"
+                 data-in="opacity: 1; scale: 1; duration: 1000"
+                 data-stay="duration: 1000"
+                 data-out="opacity: 0; duration: 500">
+                the batman begins
+            </div>
+        </div>
+    </div>
+    <div class="frame">
+        <div class="center">
+            <div class="step"
+                 data-init="opacity:0; scale: .4"
+                 data-in="opacity: 1; scale: 1; duration: 1000"
+                 data-stay="duration: 1000"
+                 data-out="opacity: 1; duration: 500">
+                2017.5.29
+            </div>
+        </div>
+    </div>
+    <div class="frame" data-video="xxx.mp4">
+        <div class="step"
+             data-init="opacity:0; scale: .4"
+             data-in="opacity: 1; scale: 1; duration: 1000"
+             data-stay="duration: 1000"
+             data-out="opacity: 1; duration: 500">
+        </div>
+    </div>
+    <div class="frame" data-audio="xxx.mp3"></div>
+</div>
+
+<script src="src/main.js"></script>
+<script>
+//    document.addEventListener('DOMContentLoaded', pptPlayer)
+</script>
+</body>
+</html>
